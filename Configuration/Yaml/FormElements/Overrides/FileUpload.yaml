@@ -7,6 +7,42 @@ TYPO3:
             FileUpload:
               formEditor:
                 editors:
+                  300:
+                    identifier: allowedMimeTypes
+                    templateName: Inspector-MultiSelectEditor
+                    label: formEditor.elements.FileUpload.editor.allowedMimeTypes.label
+                    propertyPath: properties.allowedMimeTypes
+                    selectOptions:
+                      10:
+                        value: application/msword
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.doc
+                      20:
+                        value: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.docx
+                      30:
+                        value: application/msexcel
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.xls
+                      40:
+                        value: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.xlsx
+                      50:
+                        value: application/pdf
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.pdf
+                      60:
+                        value: application/vnd.oasis.opendocument.text
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.odt
+                      70:
+                        value: application/vnd.oasis.opendocument.spreadsheet-template
+                        label: formEditor.elements.FileUpload.editor.allowedMimeTypes.ods
+                      110:
+                        value: image/jpeg
+                        label: formEditor.elements.ImageUpload.editor.allowedMimeTypes.jpg
+                      120:
+                        value: image/png
+                        label: formEditor.elements.ImageUpload.editor.allowedMimeTypes.png
+                      130:
+                        value: image/bmp
+                        label: formEditor.elements.ImageUpload.editor.allowedMimeTypes.bmp
                   310:
                     identifier: multiple
                     templateName: Inspector-CheckboxEditor
