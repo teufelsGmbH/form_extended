@@ -234,8 +234,9 @@ class DoubleOptInFinisher extends \TYPO3\CMS\Form\Domain\Finishers\EmailFinisher
                     if ($file instanceof FileReference) {
                         $file = $file->getOriginalResource();
                     }
-
-                    $mail->attach($file->getContents(), $file->getName(), $file->getMimeType());
+                    if (!empty($file)) {
+                        $mail->attach($file->getContents(), $file->getName(), $file->getMimeType());
+                    }
                 }
             }
         }
